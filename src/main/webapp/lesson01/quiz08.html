@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>검색하기</title>
+<style>
+  body, html, * {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  #wrap {
+    width:100%;
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+  }
+  input {
+    width:80%;
+    height:40px;
+    border-radius:5px;
+    border:1px solid #ddd;
+    text-indent:10px;
+  }
+  button {
+    width:18%;
+    height:40px;
+    background:blue;
+    border-radius:5px;
+    color:#fff;
+    border:none;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <form method="get" action ="/servlet/quiz08">
+      <label for="search" style="margin-bottom:20px;display:block;font-size:18px;font-weight:bold;">검색</label>
+      <input type="search" id="search" name="search" placeholder="검색어을 입력해주세요.">
+      <button type="submit" value="검색">검색</button>
+    </form>
+  </div>
+</body>
+</html>
